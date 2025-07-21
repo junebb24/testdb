@@ -1,0 +1,14 @@
+{
+  "sqltools.connections": [
+    {
+      "name": "PostGIS",
+      "driver": "PostgreSQL",
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5433,
+      "database": "media_db",
+      "username": "app_user",
+      "password": "supersecret"
+    }
+  ]
+}
