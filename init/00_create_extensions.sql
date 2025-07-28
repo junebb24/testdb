@@ -1,0 +1,5 @@
+-- PostGIS, hstore, uuid-ossp 등 확장 생성
+CREATE EXTENSION IF NOT EXISTS postgis;
+CREATE EXTENSION IF NOT EXISTS postgis_topology;
+CREATE EXTENSION IF NOT EXISTS hstore;
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";

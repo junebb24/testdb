@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgis/postgis:15-3.3                # 공식 PostGIS 이미지[18]
+    container_name: ytdb-postgis
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "5433:5432"
+    volumes:
+      - dbdata:/var/lib/postgresql/data          # 영속 볼륨
+      - ./migrations:/docker-entrypoint-initdb.d # 부트스트랩 SQL
+volumes: 
+  dbdata:
